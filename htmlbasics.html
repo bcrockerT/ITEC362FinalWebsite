@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+		<title>HTML Basics</title>
+	<link href="css/globalStyles.css" rel="stylesheet">
+	<style>
+		table{
+			border-spacing:0px;
+			border:solid 1px black;
+			text-align:center;
+			margin:auto;
+			width:40%;
+		}
+		th{
+			font-weight:bold;
+		}
+		td{
+			
+			padding:5px;
+		}
+		td, th{
+			border-bottom:solid;
+			border-width:1px;
+			border-color:black;
+		}
+		tr{
+			background-color:#9423cc;
+			color:white;
+		}
+		tr:nth-child(odd){
+			background-color:#6d1aa3;
+		}
+	</style>
+	</head>
+	<body>
+	<div class="wrapper">
+		<header>
+			<nav>
+			<!--THIS IS A COMMENT FOR THE HTML COMMENT REQUIREMENT-->
+				<img src="globalImages/BC-logos_white.png" height="100" width="100" alt="logo">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="htmlbasics.html">HTML Basics</a></li>
+					<li><a href="cssbasics.html">CSS Basics</a></li>
+					<li><a href="javascriptbasics.html">JavaScript Basics</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+		<h1>This is where the tagline of the HTML page will go!</h1>
+			<span><h3>Some supporting words</h3></span>
+			<article>
+				<p>This is where the main info on page goes.</p>
+				<p><strong>Bold text for the formatting requirement</strong></p>
+			</article>
+			<table>
+			<caption>Random Table Stuff</caption>
+			<th colspan="3">Header</th>
+			
+				<tr>
+					<td>Test1</td>
+					<td>Test2</td>
+					<td>Test3</td>
+				</tr>
+				<tr>
+					<td>Test1</td>
+					<td>Test2</td>
+					<td>Test3</td>
+				</tr>
+				<tr>
+					<td colspan="3">COL SPAN ALL 3 COL</td>
+					
+				</tr>
+				<tr></tr>
+				<tfoot>
+					<tr>
+						<td>Footer?</td>
+						<td>FootCol2</td>
+						<td>FootCol3</td>
+					</tr>
+				</tfoot>
+			</table>
+			<section><p style="font-weight:bold;">Testing sections. There will be an border under a section to separate it from the following content. This will be used to keep topics separate.</p></section><br>
+			<section><p style="color:red">This paragraph is to fulfil the inline style REQUIREMENT :)</p></section>
+			<section><p>Testing sections</p></section>
+		</main>
+		<br>
+		<footer>HTML by BC&#169 </footer>
+		</div>
+		
+	</body>
+</html>
