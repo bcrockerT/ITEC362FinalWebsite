@@ -1,0 +1,68 @@
+body{
+	font-family:Helvetica, Arial, Times New Roman;
+}
+/*Wrapper, adds a white outer part to each page*/
+.wrapper{
+	background-color:#F0F0F0;
+	width:90%;
+	margin:auto;
+	
+}
+
+/*Playing around with flex for images on index*/
+.flex{
+	display:flex;
+	flex-wrap:wrap;
+	
+}
+.flex > img{
+	padding:5px;
+}
+
+/*This is all for my nav bar*/
+nav{
+	margin:auto;
+	padding:1px;
+	background-color:#9423cc;
+	
+}
+nav img{
+	float:left;
+	position:absolute;
+	left:5%;
+	
+	padding-right:30px;
+}
+nav ul{
+	list-style-type:none;
+}
+
+nav li{
+	
+	display:inline-block;
+	padding-left:20px;
+	text-align:center;
+}
+nav li:nth-child(1){
+	padding-left:50px;
+}
+nav a{
+	display:inline-block;
+	padding:1rem;
+	text-decoration:none;
+	font-weight:bold;
+	color:white;
+}
+
+nav a:hover{
+	background-color:#6d1aa3;
+	text-decoration:underline;
+	
+	color:white;
+}
+
+/*Style sections so they have a line below them to break up content*/
+section{
+	border-bottom:solid;
+	border-width:1px;
+}
