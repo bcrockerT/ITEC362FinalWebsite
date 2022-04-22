@@ -20,7 +20,41 @@
 			</nav>
 		</header>
 		<main>
-		<h1 style="text-decoration:underline;">We haven't learned any JavaScript yet, check back later!</h1>
+		<h1>JavaScript Basics</h1>
+		<h3>What is JavaScript?</h3>
+		<p>JavaScript is a scripting language that works in you web browser. JavaScript is basically the only programming language that you can use in you web browser, and it is very similar to Java, which is a completely different programming language. JavaScript is responsible for a lot of interactive, auto-updating websites that you may have seen. JavaScript is responsible for adding most interactivity you see in modern websites.</p>
+		
+		<p>As stated above, JavaScript is similar to Java in that you can create fully functional scripts all in the web browser. In these scripts you can define variables, perform arithmetic, create loops, and make functions to perform more complex tasks. In this way, its comparee to Java, as they have similar syntax and can perform very similar tasks.</p>
+		<p>JavaScript can be performed both locally within the HTML file itself, or it can be saved and linked to from another file, much like CSS</p>
+		<div class="code">
+			<pre>
+				<code>
+					 &lt;script src="myscripts.js"&gt;&lt;/script&gt; 
+				</code>
+			</pre>
+		</div>
+		<h4>An extremely simple JS script</h4>
+		<div class="code">
+			<pre>
+				<code>
+					&lt;script&gt;document.write('Hello World');&lt;/script&gt;
+				</code>
+			</pre>
+		</div>
+		<p>Output of script: <script>document.write('Hello World');</script></p>
+		<p>Another very simple example of JS is the "Last Modified" timestampt in the footer of each of this sites pages. The script is very simple, it saves the time that the HTML document was last modified, saves it, then prints it.</p>
+		
+		<div class="code">
+			<pre>
+				<code>
+					&lt;script&gt;
+						var date = document.lastModified;
+						document.write("Last Modified: "+date);
+					&lt;/script&gt;
+				</code>
+			</pre>
+		</div>
+		<p>Considering my very limited experience with JavaScript, I do not really possess the knowledge to adequately teach it to anyone at even a basic level, so I'll link to <a href="https://www.w3schools.com/js/"> w3schools JavaScript tutorial</a> for anyone who  wants to learn a little about.</p>
 		</main>
 		<footer>
 			JavaScript by BC&#169 <br>

@@ -13,6 +13,8 @@
 			width:40%;
 		}
 		th{
+			background-color:#9423cc;
+			color:white;
 			font-weight:bold;
 		}
 		td{
@@ -25,11 +27,10 @@
 			border-color:black;
 		}
 		tr{
-			background-color:#9423cc;
-			color:white;
+			
 		}
 		tr:nth-child(odd){
-			background-color:#6d1aa3;
+			background-color:white;
 		}
 	</style>
 	</head>
@@ -49,56 +50,108 @@
 			</nav>
 		</header>
 		<main>
-		<h1>This is where the tagline of the HTML page will go!</h1>
-			<span><h3>Some supporting words</h3></span>
+		
 			<article>
-				<p>This is where the main info on page goes.</p>
-				<p><strong>Introductory information about HTML will go here</strong></p>
+			<h1>The basics of HTML</h1>
+			<span><h3>What is HTML?</h3></span>
+			<p>HTML, or Hyper Text Markup Language, is coding language used to create webpages. The code is interpreted by your web browser, and converted into visual stuff that you can see. Yes.</p>
+				<p>This site, along with another I will soon recommend, will be all that you will need to get a basic grasp on the concepts needed to create a functional, somewhat stylish website of your own. <a href="https://www.w3schools.com/">w3schools </a>is a great resource to keep in mind while making your own sites, and will be extremely valuable for any questions you might have.</p>
+				<p style="text-align:center;"><strong>A quick video covering HTML in broad. </strong></p>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/gT0Lh1eYk78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</article>
-			<p>I still haven't decided what info will go in this table</p>
-			<table>
-			<caption>Random Table Stuff</caption>
-			<th colspan="3">Header</th>
+			
+			
+			<section>
+				<h2>The HTML skeleton</h2>
+				<p>To begin our HTML journey, I'm going to introduce HTML to you the same way it was introduced to me. I was shown the basic layout for HTML, and my teacher called it the "HTML Skeleton". The name is quite fitting because no matter the complexity of your website, it will always begin in a state very similar to this. The skeleton will contain all the minimal elements you need to create a basic webpage.</p>
+				<div class="code">
+					<p>
+					<!--All code past this point will appear as it does here, so indention will move left-->
+					<pre>
+					<code>
+&lt;HTML&gt;<br>
+	&lt;head&gt;<br>
+		&lt;title&gt;Hello World!&lt;/title&gt;<br>
+	&lt;/head&gt;<br>
+	&lt;body&gt;<br>
+		Hello World!
+	&lt;/body&gt;<br>
+					
+&lt;/HTML&gt;
+					</code>
+					</pre>
+					
+					
+					</p>
+				</div><br>
+			</section><br>
+			<section>
+				<h2>HTML Basics</h2>
+				<p>The following table contains the required elements to make a very basic webpage. No matter the webpage, it will contain these elements. A brief description will also be given, so that you at least understand what each piece does.</p>
+				<table>
+			<caption>Basic HTML Tags</caption>
+			
+				<tr><th>Tag</th><th>Purpose</th></tr>
 			
 				<tr>
-					<td>Test1</td>
-					<td>Test2</td>
-					<td>Test3</td>
+					<td>HTML</td>
+					<td>The &lt;HTML&gt; tag defines the start and end of your page. Everything will be within these tags.</td>
+					
 				</tr>
 				<tr>
-					<td>Test1</td>
-					<td>Test2</td>
-					<td>Test3</td>
+					<td>header</td>
+					<td>Content within the &lt;HTML&gt; tags will not be displayed on your website, but is used for things to describe your website. Things like meta data, links to external CSS, and the &lt;title&gt; are put here. </td>
+					
 				</tr>
 				<tr>
-					<td colspan="3">COL SPAN ALL 3 COL</td>
+					<td>title</td>
+					<td>This is where you put the title that will appear in the web browsers tab.</td>
+					
+				</tr>
+				<tr>
+					<td>body</td>
+					<td>The body contains all of the visible content of your webpage. Everything you want to share is within the &lt;HTML&gt; tags.</td>
 					
 				</tr>
 				<tr></tr>
 				<tfoot>
 					<tr>
-						<td>Footer?</td>
-						<td>FootCol2</td>
-						<td>FootCol3</td>
+						<td colspan="2">*This is not a complete list of HTML elements*</td>
+						
 					</tr>
 				</tfoot>
 			</table>
-			<section>
-				<h2>Discuss HTML skeleton here</h2>
-				<p>Paragraph about HTML skeleton, placeholder image for figure showing skeleton</p>
-				<img src="globalImages/placeholder.png" width="250" height="200" alt="placeholder for HTML skeleton">
-				<p style="font-weight:bold;">Testing sections. There will be an border under a section to separate it from the following content. This will be used to keep topics separate. <i>This is in the first section.</i></p>
-			</section><br>
-			<section>
-				<h2>Discuss HTML Basics</h2>
-				<p>Stuff like h1, h2, etc. Lists, br, and other basic HTML functions</p>
-				<p style="color:red">This paragraph is to fulfil the inline style REQUIREMENT :)</p>
+			<h3>Other basic HTML elements</h3>
+				<p>Now that we know all the required elements to create a webpage, lets cover some other tags that will let us change how our content will appear.</p>
+				<ul>
+					<li>Header tags - &lt;h1&gt; - &lt;h6&gt;. As the name suggests, these tags are used for content headers. &lt;h1&gt; is the largest, with &lt;h6&gt; being the smallest</li>
+					<li>
+					Lists
+						<ul>
+						<li>Ordered lists - the &lt;ol&gt; tag will create an ordered list, and by defualt uses numeric values to create an organized list </li>
+						<li>Unordered lists - the &lt;ul&gt; is used to create an unordered list, or one that uses bullet points.</li>
+						<li>List elements - the &lt;li&gt; tag follows the &lt;ol&gt; or &lt;ul&gt; tags, and is used to add things to your list.</li>
+						</ul>
+					</li>
+					<li>Paragraph tag - The &lt;p&gt; is the most basic way to present text on your HTML webpage, while it isn't technically required, as you can simpy type text into the body of your webpage, it is definitely useful when splitting up your text conten</li>
+				</ul>
 			
 			</section>
 			<section>
-				<h2>Discuss HTML containers</h2>
-				<p>Basics of containers, types of containers, management of information using containers</p>
-				<p>Testing sections</p>
+				<h2>HTML containers</h2>
+				<p>Now that the basic ways to present content have been presented, lets move on to some of the ways to help organize. In HTML, there are many different kinds of containers that you can use to help organize, format, and position the content on your webpages. While most of these containers are functinally the same, they each serve their own purpose</p>
+				<ul>
+					<li>nav - The &lt;p&gt; is used to store content relating to navigation on your site, like the bar at the top of this page that contains links to each page.</liv>
+					<li>div - The &lt;div&gt; is a generic content container that can be used for almost anything, and is commonly used to separate content that will be styled a specific way.</li>
+					<li>main - The &lt;main&gt; is used to store the main content of your page.</li>
+					<li>aside - The &lt;aside&gt; is used for secondary content, maybe a sidebar or anything else located to the side of the main content</li>
+					<li>article - The &lt;article&gt; is used to contain independent articles or content on your page.
+					</li>
+					<li>section - The &lt;section&gt; is for separating generic content.</li>
+					<li>header - The &lt;header&gt; is used for storing the content in your header, and is generally at the top of your page.</li>
+					<li>footer - The &lt;footer&gt; is used for footer information that goes at the bottom of your page.</li>
+				</ul>
+				<p>As stated above, all of these containers are functionally the same, but in best practice they all have their uses in specific circumstances.</p>
 			</section>
 		</main>
 		<br>
@@ -110,6 +163,5 @@
 			</script>
 		</footer>
 		</div>
-		
 	</body>
 </html>

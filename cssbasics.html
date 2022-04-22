@@ -20,12 +20,10 @@
 			</nav>
 		</header>
 		<main>
-		<h1>The basics of Cascading Style Sheets</h1>
-		<p>This is where information about CSS will go. This information will be addedd at a later date.</p>
-		<h2>Basic of CSS</h2>
-		<p>Introductory paragraph about CSS</p>
-		<h3>Use of CSS</h3>
-		<p>Discuss CSS in general, 3 ways to implement.</p>
+		
+		<h2>Basics of CSS</h2>
+		<p>CSS, or cascading style sheet is the term used to describe the file that controls all the styling found in  a webpage. In most cases, a file that is separate from your HTML page will be used to help with the designing and styling of your web content. The CSS file doesn't add anything to your page, but rather formats and changes what already exists in your HTML file.</p>
+		<h3>Types of CSS</h3>
 		<ul>
 			<li>Inline</li>
 			<li>Internal</li>
@@ -33,19 +31,70 @@
 		</ul>
 		<section>
 			<h3>Inline</h3>
-			<p>Stuff about inline, maybe a picture</p>
+			<p>Inline CSS is inputted within the HTML element itself, such as in an &lt;h1&gt; or a &lt;p&gt; tag. This kind of CSS is used in some situations where you may what a single element to appear unique or to help it stand out a little more from the rest of your content.</p>
+			<div class="code">
+				<pre>
+				<!--All code past this point will appear as it does here, so indention will move left-->
+					<code>
+&lt;span style="color:purple;"&gt;Example of inline CSS!&gt;span&gt;
+					</code>
+				</pre>
+			</div><br>
 		</section>
 		<section>
 			<h3>Internal</h3>
-			<p>Stuff about internal, maybe a picture</p>
+			<p> Internal CSS forgoes the need for an external style sheet, and instead you create all of your styling declarations within the HTML file itself. For small scale projects, internal CSS may be much more convenient and easy to implement, however it is usually best to use external CSS. As you will soon see, creating internal CSS is very quick and easy.</p>
+			<div class="code">
+				<pre>
+					<code>
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Example title&lt;/title&gt;
+&lt;style&gt;
+/*This is purely an example, you can choose any elements and declarations you wish*/
+ body{
+	background-color:black;
+	color:white;
+}
+  h1{
+	font-size:20px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+					</code>
+				</pre>
+				</div><br>
 		</section>
 		<section>
 			<h3>External</h3>
-			<p>Stuff about external, maybe a picture</p>
+			<p>As mentioned above, CSS can be saved in its own external file. There isn't really anything special about a .css file, its pretty much a text file that is used to hold all the styling information that will be used in your HTML page.</p>
+
+			<p>Considering this file is external, there has to be  a way to link it to your HTML page. The code below shows how to connect your CSS and HTML files together, so that all that beautiful styling you've created can be seen.</p>
+			
+			<div class="code">
+				<pre>
+					<code>
+&lt;html&gt;
+&lt;head&gt;
+&lt;title>Example title&lt;/title&gt;
+&lt;link href="style.css" rel="stylesheet"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;			
+					</code>
+				</pre>
+			</div><br>
 		</section>
 		<section>
 			<h3>General CSS formating and use</h3>
-			<p>Stuff about CSS, such as selectors, and different functions</p>
+			<p>When it comes to CSS, there are 2 main things to keep in mind, the element, and the property in which you are going to modify.</p>
+			<p>In CSS, elements are the objects that you are trying to target. These elements can be any HTML tag that you have used, such as an &lt;h1&gt;, &lt;div&gt;, or even the &lt;HTML&gt; tag itself. No matter what element it is, you can style it in some way with the use of CSS.</p>
+			<p>Properties are the things that you are changing about an element, such as the color, font-size, or the padding/margins. Many different properties exist, much too many for me to list off here, so I will provide a link to the <a href="https://www.w3schools.com/cssref/">w3schools list of properties</a>. Each property has specific valid values, and to know for sure its best to look up the property you are using if you are unsure.</p>
+			
 		</section>
 		</main>
 		
